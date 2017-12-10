@@ -1,0 +1,91 @@
+######################################
+####    TIPOS INTERNOS PADRÕES    ####
+######################################
+
+TIPOS QUE SÃO CONSIDERADOS FALSOS
+---------------------------------
+None
+False
+0, 0L, 0.0, 0j
+'', [], ()		sequência vazia
+{}			mapeamento vazio
+*** Valores opostos são considerados verdadeiros.
+
+OPERADORES BOOLEANOS
+--------------------
+or			ou
+and			e
+not			negação
+*** em ordem de prioridade
+
+COMPARAÇÕES
+-----------
+<			menor
+<=			menor ou igual
+>			maior que
+>=			maior ou igual
+==			igual
+!=			diferente
+is			objeto idêntico
+is not			objeto diferente
+<>			diferente, compatível apenas para o Python 2*
+
+TIPOS PRIMTIVOS
+---------------
+int	inteiro
+float	real
+str	string
+bool	booleanos	and, or, not, True, False
+
+OPERADORES ARITMÉTICOS
+----------------------
++		adição
+-		subtração
+*		multiplicação
+/		divisão
+//		parte inteira da divisão
+%		resto da divisão
+**		potenciação
+-x		negativo
++x		positivo
+abs()		valor absoluto ou módulo
+int()		função inteiro
+float()		função real
+complex(i,j)	complexo imaginario
+c.conjugate()	conjugado do valor c
+divmod(x,y)	par (x //y, x % y)
+pow(x,y)	potência de x em y
+math.trunc(x)	trunca o valor
+round(i,j)      arredonda i  para j casas
+math.floor(i)	arrendoda para o piso
+math.ceil(i)	arredonda para o topo
+bin(x)		converte x para binário
+
+OPERADORES DE BIT (BITWISE)
+---------------------------
+&	and					110 & 100 >>> 100
+|	or					110 | 110 >>> 110
+^	xor					110 ^ 100 >>> 010
+x << y	acrescenta y bits a direita de x (* 2)	4 << 1 >>> 8
+x >> y	remove y bits a esquerda de x (/ 2)     4 >> 1 >>> 2
+~x	complemento de 2 			bin(~4) = -5  
+
+
+
+#######################
+####    FUNÇÕES    ####
+#######################
+
+Sequência nomeada de instruções que executa uma operação, o valor que está dentro dos parênteses é chamado de argumento da função e que este possui um valor de retorno. Python possui diversos modulos que possui muitas funções. Para importar um modulo basta dar o comando 'import módulo' onde é criado um objeto módulo. Para acessar as funções do módulo é necessário especificar o nome do módulo e o nome da função, separados por um ponto. Por exemplo math.pi, math.sin(1).
+
+def é uma palavra chave que indica a definição de uma função esta deve vir logoa após a palavra chave e após o seu nome e um par de parênteses (cabeçalho) e as regras para o nome são as mesmas para as variáveis, o resto é chamado de corpo. O cabeçalho deve terminar com dois pontos e o corpo constituído por endentação (4 espaços). Para terminar uma função, insira um linha em branco. Uma variável dentro de uma função só existirá dentro da mesma.
+
+
+
+############################
+####    BIBLIOGRAFIA    ####
+############################
+
+- Página de Documentação do Python. https://docs.python.org/3/
+- Pense em Python. Pense como um cientista da computação. Allen B. Downey. Novatec, 1º edição.
+- Curso Intensivo de Python. Uma introdução prática e baseada em projeto à programação. Eric Matthes. Novate, 1º edição. 
