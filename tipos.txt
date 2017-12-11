@@ -1,0 +1,75 @@
+##############################
+####    TIPOS INTERNOS    ####
+##############################
+
+
+Tipos que são considerados falsos em testes
+-------------------------------------------
+None
+False
+0, 0L, 0.0, 0j
+'', [], ()		sequência vazia
+{}			mapeamento vazio
+Observações:
+- Valores opostos são considerados verdadeiros.
+- Operações e funções que possuem um booleano como resultado, retprna sempre um 0 ou False para falso e 1 ou True para verdadeiro
+
+
+Operações booleanas
+-------------------
+x or y
+x and y
+not x
+
+
+Comparações
+-----------
+< 	menor
+<=	menor ou igual
+> 	maior
+>= 	maior ou igual
+== 	igual
+!= 	diferente
+is	objeto é idêntico
+not is	objeto é diferente
+
+
+Tipos numericos e operações
+---------------------------
+x + y		soma
+x - y 		subtração
+x * y		produto
+x / y		divisão
+x // y		quociente da divisão
+x % y		módulo ou resto
+-x		negativo
++x		positivo
+abs()		valor absoluto ou magnitude
+int()		função que converte para inteiro
+float()		função que converte para real
+complex(r,i)	complexo 
+c.conjugate()	conjugado
+divmod(x,y)	retorna o par quociente e módulo
+pow(x, y)	potência
+x ** y		potência
+math.trunc()	trunca para um integral
+round(x,n)	arrendonda um valor x para n casas
+math.floor()	desconsidera a parte fracionária
+math.ceil()	sempre arrendonda para mais
+
+Tipos primtivos
+---------------
+int	inteiro
+float	real
+str	string
+bool	booleanos	and, or, not, True, False
+
+
+
+############################
+####    BIBLIOGRAFIA    ####
+############################
+
+- Página de Documentação do Python. https://docs.python.org/3/
+- Pense em Python. Pense como um cientista da computação. Allen B. Downey. Novatec, 1º edição.
+- Curso Intensivo de Python. Uma introdução prática e baseada em projeto à programação. Eric Matthes. Novate, 1º edição. 

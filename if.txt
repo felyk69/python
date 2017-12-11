@@ -1,0 +1,64 @@
+#################################
+####    CONTROLE DE FLUXO    ####
+#################################
+
+
+Sintaxe:
+--------
+ if condição:
+    bloco de comandos
+
+
+Observações:
+------------
+- a condição ou sentença pode ser um valor numérico, caractere, comparação ou um valor booleano;
+- a primeira cláusula if só é executada se a condição for verdadeira;
+- tudo o que estiver dentro do bloco de comandos do if, deverá estar endentado;
+- cláusulas else e elif são opcionais;
+- podem existir vários if ou elif;
+- só pode haver um else para um if;
+- parênteses são opcionais;
+- possui valor falso: '' (null), 0 e obviamente False
+- possui valor verdadeiro: qualquer caractere, qualquer valor diferente de 0 e o booleano True.
+
+
+Formas:
+-------
+if condição:
+    bloco
+
+if condição:
+    bloco1
+else:
+    bloco2
+
+if condição: bloco1
+else if condição: bloco2
+else if condição: bloco3
+else bloco4
+
+if condição: bloco1
+elif condição: bloco2
+elif condição: bloco3
+else bloco4
+
+(expressão1, expressão2)[condição]
+>>> (0, 1)[0 < 1]
+1
+
+{True: bloco1, False: bloco2}[condição]
+>>> {True: 0, False: 1}[0 < 1]
+0
+
+bloco1 if condição1 else bloco2
+>>> print(1) if 1 < 2 else print(2)
+1
+
+
+
+>>> 'b' > 'a'
+True
+>>> 'b' < 'a'
+False
+
+

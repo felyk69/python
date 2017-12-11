@@ -1,18 +1,9 @@
-######################################
-####    TIPOS INTERNOS PADRÕES    ####
-######################################
+##########################
+####    OPERADORES    ####
+##########################
 
-TIPOS QUE SÃO CONSIDERADOS FALSOS
----------------------------------
-None
-False
-0, 0L, 0.0, 0j
-'', [], ()		sequência vazia
-{}			mapeamento vazio
-*** Valores opostos são considerados verdadeiros.
-
-OPERADORES BOOLEANOS
---------------------
+BOOLEANOS
+---------
 or			ou
 and			e
 not			negação
@@ -30,19 +21,12 @@ is			objeto idêntico
 is not			objeto diferente
 <>			diferente, compatível apenas para o Python 2*
 
-TIPOS PRIMTIVOS
----------------
-int	inteiro
-float	real
-str	string
-bool	booleanos	and, or, not, True, False
-
-OPERADORES ARITMÉTICOS
-----------------------
+ARITMÉTICOS
+-----------
 +		adição
 -		subtração
 *		multiplicação
-/		divisão
+/		divisão convencional que retorna um ponto flutuante
 //		parte inteira da divisão
 %		resto da divisão
 **		potenciação
@@ -61,14 +45,41 @@ math.floor(i)	arrendoda para o piso
 math.ceil(i)	arredonda para o topo
 bin(x)		converte x para binário
 
-OPERADORES DE BIT (BITWISE)
----------------------------
+BITWISE
+-------
 &	and					110 & 100 >>> 100
 |	or					110 | 110 >>> 110
 ^	xor					110 ^ 100 >>> 010
 x << y	acrescenta y bits a direita de x (* 2)	4 << 1 >>> 8
 x >> y	remove y bits a esquerda de x (/ 2)     4 >> 1 >>> 2
 ~x	complemento de 2 			bin(~4) = -5  
+
+OPERADOR DE STRING
+------------------
++    concatena
+*    repete
+=    operador de atribuicao
+
+
+
+##############################
+####   NOMES DE VARIÁVEIS ####
+##############################
+
+- Escolha nomes significativos e auto-explicativos;
+- Deve começar com letras minúsculas;
+- Pode conter letras, números e sublinhados;
+- Deixe os nomes com caracteres maiúsculos para as constantes;
+- Fuja dos nomes reservados;
+
+
+
+#####################
+####    MODOS    ####
+#####################
+
+Modo interativo: você digita diretamente no interpretador.
+Modo script: vocẽ executa por meio de arquivos de script.
 
 
 
@@ -85,6 +96,29 @@ def é uma palavra chave que indica a definição de uma função esta deve vir 
 parênteses (cabeçalho) e as regras para o nome são as mesmas para as variáveis, o resto é chamado de corpo. O cabeçalho deve terminar 
 com dois pontos e o corpo constituído por endentação (4 espaços). Para terminar uma função, insira um linha em branco. Uma variável 
 dentro de uma função só existirá dentro da mesma.
+
+
+
+##########################
+####    COMENTÁRIOS   ####
+##########################
+#          de uma ou meia linha
+""" """    docstring ou comentário de multiplas linhas
+
+
+
+#############################
+####    RECURSIVIDADE    ####
+#############################
+
+
+
+####################
+####    DEBUG   ####
+####################
+Erros de sintaxe: diz respeito a regras e a estrutura do programa
+Erro de tempo de execuçao ou exceçoes: erros so aparecem no momento da execuçao
+Erro semantico: geralmente sao erros que nao retornam uma advertencia mas nao sao gerados os dados esperados, fazendo algo diferente do pretendido.
 
 
 

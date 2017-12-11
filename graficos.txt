@@ -1,0 +1,16 @@
+######################
+####    TURTLE    ####
+######################
+
+Permite criar gráficos utilizando o módulo Turtle.
+
+turtle.Turtle(): o módulo turtle deve ser atribuido à um objeto (variável)
+turtle.mainloop(): espera uma interação com o usuário
+
+O objeto pode ser utilizado com funções especiais
+.rt()		vira no sentindo horário
+.lt()		vira no sentido anti-horário	
+.bk()		trás
+.fd()		frente 
+.pu()		sobe o cursor (não desenha)
+.pd()		desce o cursor (desenha)
